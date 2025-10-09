@@ -19,9 +19,9 @@ int main(void) {
         return 1;
     }
     
-    fwrite(a_write, sizeof(int),   3, fp);   /* 寫入 3 個 int */
-    fwrite(b_write, sizeof(char),  3, fp);   /* 寫入 3 個 char（不寫 \0） */
-    fwrite(c_write, sizeof(float), 3, fp);   /* 寫入 3 個 float */
+    fwrite(a_write, sizeof(int),   3, fp);  
+    fwrite(b_write, sizeof(char),  3, fp);  
+    fwrite(c_write, sizeof(float), 3, fp);  
 
     fseek(fp, 0, SEEK_SET);
     
