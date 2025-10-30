@@ -1,13 +1,15 @@
+
 #include <stdio.h>
 int main() {
-    int v = 65;
-    int* p = NULL;
-    p = &v;
+    int var[5] = {1, 2, 3, 4, 5};
+    int* ip;
+    ip = &var[2];
 
-    printf("Address of v: %p\n", (void*)&v);
-    printf("Address stored in p: %p\n", (void*)p);
-    printf("Address of p: %p\n", (void*)&p);
-    printf("Value of *p: %d\n", *p);
+    printf("&var[2] = %p\n", &var[2]);
+    printf("ip = %p\n", ip);
+    printf("*ip = %d\n", *ip);
+    printf("*(ip+1) = %d\n", *(ip+1));
+    printf("*(ip-1) = %d\n", *(ip-1));
 
     return 0;
 }
